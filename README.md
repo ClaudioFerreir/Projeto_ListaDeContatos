@@ -1,7 +1,7 @@
 # Projeto Lista De Contatos 
 ## Projeto realizado em HTML, CSS, JS como tarefa parte do Curso Profissionalizante Desenvolvedor Web Full Stack Python
 ![Front App Image](./images/FrontAppImage.png)
-### Atribuiç
+### Atribuições
 * Manipulação do DOM no HTML pelo JS;
 * Lógica no JS para adicionar um novo contato;
 * Restrição para não adicionar um contato repetido com o mesmo nome;
