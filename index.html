@@ -5,11 +5,50 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact List</title>
+  <!--Custom CSS-->
   <link rel="stylesheet" href="./main.css">
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header>
+    <img src="./images/contactBook.png" alt="livro de contatos">
+    <h1>Contact List</h1>
+    <img src="./images/zapIcon.png" alt="icone zap">
+  </header>
+  <form id="form-contact">
+    <input type="text" id="name-contact" required placeholder="Contact's Name">
+    <div id="phone-number">
+      <input type="tel" id="ddd-number" required placeholder="DDD">
+      <input type="tel" id="phone-contact" required placeholder="Phone's Number">
+    </div>
+    <button type="submit">Adicionar +</button>
+  </form>
   <div class="container">
-
+    <table cellspacing="0">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Phone Number</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Joao</td>
+          <td>(11)99003-8278</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Total: 1</td>
+        </tr>
+      </tfoot>
+    </table>
   </div>
 </body>
 </html>
