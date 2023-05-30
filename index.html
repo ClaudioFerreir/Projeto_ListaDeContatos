@@ -16,19 +16,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!--header-->
   <header>
     <img src="./images/contactBook.png" alt="livro de contatos">
     <h1>Contact List</h1>
     <img src="./images/zapIcon.png" alt="icone zap">
   </header>
+  <!--form-->
   <form id="form-contact">
     <input type="text" id="name-contact" required placeholder="Contact's Name">
     <div id="phone-number">
-      <input type="tel" id="ddd-number" required placeholder="DDD">
-      <input type="tel" id="phone-contact" required placeholder="Phone's Number">
+      <input type="tel" id="ddd-contact" required placeholder="DDD" maxlength="2">
+      <input type="tel" id="phone-contact" required placeholder="Phone's Number" maxlength="9">
     </div>
-    <button type="submit">Adicionar +</button>
+    <button type="submit">Add Contact</button>
   </form>
+  <!--contact list-->
   <div class="container">
     <table cellspacing="0">
       <thead>
@@ -39,16 +42,18 @@
       </thead>
       <tbody>
         <tr>
-          <td>Joao</td>
-          <td>(11)99003-8278</td>
+          <td>---</td>
+          <td>---</td>
         </tr>
       </tbody>
       <tfoot>
         <tr>
-          <td colspan="2">Total: 1</td>
+          <td colspan="2" id="total-contacts"></td>
         </tr>
       </tfoot>
     </table>
   </div>
+  <!--Custom JS-->
+  <script src="./main.js"></script>
 </body>
 </html>

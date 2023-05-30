@@ -1,9 +1,13 @@
+/*reset*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+
+/*body*/
 
 body {
   background-image: url(./images/paico-oficial-7jFMs5vzsSQ-unsplash.jpg);
@@ -13,6 +17,8 @@ body {
   height: 100vh;
 }
 
+/*container*/
+
 .container {
   margin: 30px auto;
   background-color: rgba(255, 255, 255, .4);
@@ -21,6 +27,8 @@ body {
   width: 50%;
   border-radius: 10px;
 }
+
+/*header*/
 
 header {
   margin-top: 10px;
@@ -38,6 +46,8 @@ h1 {
 header img {
   height: 50px;
 }
+
+/*form*/
 
 form {
   display: flex;
@@ -60,7 +70,7 @@ form {
   padding: 30px auto;
 }
 
-#ddd-number {
+#ddd-contact {
   width: 45px;
   padding: 5px;
   border: none;
@@ -85,6 +95,12 @@ form button {
   border-radius: 5px;
 }
 
+form button:hover {
+  background-color: #01a738;
+}
+
+/*table*/
+
 table {
   width: 90%;
   text-align: center;
@@ -98,10 +114,14 @@ table th {
 }
 
 table tbody tr td {
+  font-size: 20px;
   font-family: 'Caveat', cursive;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
 }
 
 table tfoot tr td{
+  font-size: 15px;
   border-top: 1px solid #000;
   padding-top: 5px;
+  text-align: right;
 }
